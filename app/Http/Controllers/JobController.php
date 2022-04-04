@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class JobController extends Controller
 {
-
-   
-    function show(){
-    return    view('jobs');
+    // function use to display jobs page
+    function show()
+    {
+    return view('jobs');
     }
 }
