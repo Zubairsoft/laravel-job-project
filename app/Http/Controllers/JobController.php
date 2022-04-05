@@ -9,6 +9,6 @@ class JobController extends Controller
     // function use to display jobs page
     function show()
     {
-    return view('jobs');
+    return view('forent.jobs');
     }
 }

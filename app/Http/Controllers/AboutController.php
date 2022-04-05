@@ -9,6 +9,6 @@ class AboutController extends Controller
     // function use to display about page
     function show()
     {
-        return view('about');
+        return view('forent.about');
     }
 }

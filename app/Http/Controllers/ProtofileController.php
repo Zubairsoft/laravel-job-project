@@ -9,6 +9,6 @@ class ProtofileController extends Controller
     //Fonction use to display protofile page
     function show()
     {
-    return view('protofile');
+    return view('forent.protofile');
     }
 }

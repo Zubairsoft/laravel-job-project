@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\JobDetailsController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PartnershipController;
 use App\Http\Controllers\ProtofileController;
 use App\Http\Controllers\QualificationController;
 use App\Http\Controllers\ServiceController;
@@ -47,7 +48,7 @@ use Illuminate\Support\Facades\Route;
 
  Route::get('/contact',[ContactController::class,'show']);
 
- Route::get('/partnership',[AboutController::class,'show']);
+ Route::get('/partnership',[PartnershipController::class,'show']);
 
  Route::get('/service',[ServiceController::class,'show']);
 

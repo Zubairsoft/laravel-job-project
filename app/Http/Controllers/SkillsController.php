@@ -9,6 +9,6 @@ class SkillsController extends Controller
     //Function use to display skills page
     function show()
     {
-        return view('skills');
+        return view('forent.skills');
     }
 }

@@ -9,6 +9,6 @@ class QualificationController extends Controller
     // Function use to display Qualification page
     function show()
     {
-    return view('qualafiction');
+    return view('forent.qualafiction');
     }
 }

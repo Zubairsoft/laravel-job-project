@@ -9,7 +9,7 @@ class ServiceController extends Controller
     // Function use  to display service page
     function show()
     {
-        return view('service');
+        return view('forent.service');
     }
 
 }

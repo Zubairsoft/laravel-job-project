@@ -9,6 +9,6 @@ class ContactController extends Controller
     // Function use to display contact page
       function show()
       {
-        return view('contact');
+        return view('forent.contact');
       }
 }

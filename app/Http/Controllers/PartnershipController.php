@@ -10,7 +10,7 @@ class PartnershipController extends Controller
 
     function show()
     {
-    return view('partner');
+    return view('forent.partner');
     }
 
 }

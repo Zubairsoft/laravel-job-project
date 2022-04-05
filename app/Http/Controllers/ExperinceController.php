@@ -13,6 +13,6 @@ class ExperinceController extends Controller
      */
     function show()
     {
-        return view('experince');
+        return view('forent.experince');
     }
 }

@@ -9,6 +9,6 @@ class LoginController extends Controller
     //Function use to display login page
     function show()
     {
-    return view('login');
+    return view('forent.login');
     }
 }
