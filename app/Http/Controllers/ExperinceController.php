@@ -15,4 +15,11 @@ class ExperinceController extends Controller
     {
         return view('forent.experince');
     }
+
+    function showDashboard()
+    {
+        return view('dashboard.add.experience');
+    }
+
+
 }

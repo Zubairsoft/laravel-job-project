@@ -11,4 +11,7 @@ class ContactController extends Controller
       {
         return view('forent.contact');
       }
+      function showDashboard(){
+        return view('dashboard.add.contact');
+      }
 }

@@ -11,4 +11,8 @@ class AboutController extends Controller
     {
         return view('forent.about');
     }
+    function showDashboard()
+    {
+        return view('dashboard.add.about');
+    }
 }

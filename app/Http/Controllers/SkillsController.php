@@ -6,9 +6,14 @@ use Illuminate\Http\Request;
 
 class SkillsController extends Controller
 {
-    //Function use to display skills page
+    //
     function show()
     {
         return view('forent.skills');
+    }
+
+    function showDashboard()
+    {
+        return view('dashboard.add.skills');
     }
 }

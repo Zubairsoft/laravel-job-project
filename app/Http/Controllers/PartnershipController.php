@@ -13,4 +13,9 @@ class PartnershipController extends Controller
     return view('forent.partner');
     }
 
+    function showDashboard()
+    {
+    return view('dashboard.add.partner');
+    }
+
 }

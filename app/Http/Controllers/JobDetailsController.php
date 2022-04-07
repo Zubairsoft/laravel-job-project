@@ -11,4 +11,9 @@ class JobDetailsController extends Controller
     {
         return view('forent.job_details');
     }
+
+    function showDashboard()
+    {
+        return view('dashboard.add.job_detail');
+    }
 }

@@ -11,4 +11,8 @@ class QualificationController extends Controller
     {
     return view('forent.qualafiction');
     }
+    function showDashboard()
+    {
+    return view('dashboard.add.qualifiction');
+    }
 }

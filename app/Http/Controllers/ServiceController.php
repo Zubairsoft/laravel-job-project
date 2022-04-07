@@ -12,4 +12,10 @@ class ServiceController extends Controller
         return view('forent.service');
     }
 
+    function showDashboard()
+    {
+        return view('dashboard.add.service');
+    }
+
+
 }

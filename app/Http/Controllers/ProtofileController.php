@@ -11,4 +11,9 @@ class ProtofileController extends Controller
     {
     return view('forent.protofile');
     }
+
+    function showDashboard()
+    {
+    return view('dashboard.add.profile');
+    }
 }
