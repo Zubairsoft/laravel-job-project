@@ -7,7 +7,7 @@ use App\Http\Controllers\ExperinceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\JobDetailsController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PartnershipController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProtofileController;
@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Routing for display project pages
+######### Routing for display project pages #########
 
  Route::get('/home',[HomeController::class,'show'])->name('home');
 
@@ -39,7 +39,9 @@ use Illuminate\Support\Facades\Route;
 
  Route::get('/profile',[ProtofileController::class,'show'])->name('profile');
 
- Route::get('/login',[LoginController::class,'show'])->name('login');
+ Route::get('/login',[AuthController::class,'login'])->name('login');
+
+ Route::get('/register',[AuthController::class,'showRegister'])->name('register');
 
  Route::get('/experience',[ExperinceController::class,'show'])->name('ex');
 
@@ -55,7 +57,7 @@ use Illuminate\Support\Facades\Route;
 
  Route::get('/service',[ServiceController::class,'show'])->name('service');
 
-// router dashboard
+######### router dashboard ###########
 Route::get('/add_user',[UserController::class,'show'])->name('add user');
 Route::get('/add_about',[AboutController::class,'showDashboard'])->name('add about');
 Route::get('/add_contact',[ContactController::class,'showDashboard'])->name('add about');
@@ -66,10 +68,12 @@ Route::get('/add_job',[JobController::class,'showDashboard'])->name('add job');
 Route::get('/add_job_detail',[JobDetailsController::class,'showDashboard'])->name('add job');
 Route::get('/add_partnership',[PartnerShipController::class,'showDashboard'])->name('add partner');
 Route::get('/add_post',[PostController::class,'show'])->name('add post');
-Route::get('/edit_profile',[ProtofileController::class,'showDashboard'])->name('add post');
+Route::get('/edit_profile',[ProtofileController::class,'showDashboard'])->name('edit profile');
 Route::get('/add_skills',[SkillsController::class,'showDashboard'])->name('add skill');
 Route::get('/add_service',[ServiceController::class,'showDashboard'])->name('add service');
+############## register rout #########
 
+Route::post('/save_user',[AuthController::class,'register'])->name('create account');
 
 
 

@@ -10,4 +10,6 @@ class UserController extends Controller
     function show(){
         return view('dashboard.add.users');
     }
+
+    
 }
